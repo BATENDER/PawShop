@@ -1,0 +1,40 @@
+:root {
+    --azul: #6EB3D0;
+    --verde: #69db38;
+    --rosa: #f07fb0;
+    --laranja: #F4A623;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+header, footer {
+    background-color: var(--azul);
+}
+
+.carousel-indicators button, .carousel-inner button span {
+    filter: drop-shadow(3px 2px 2px var(--preto));
+}
+
+.card, .card img, .card a {
+    border-radius: 0;
+}
+
+.card {
+    padding: 5px;
+    border: 1px solid var(--preto);
+}
+
+.card button {
+    background-color: var(--rosa);
+    border: none;
+    border-radius: 0;
+}
+
+.card button:hover {
+    background-color: var(--rosa);
+}
+
+.card button:active {
+    background-color: #f0599a !important;
+    color: var(--rosa);
+}
