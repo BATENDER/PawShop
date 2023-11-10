@@ -38,3 +38,20 @@ header, footer {
     background-color: #f0599a !important;
     color: var(--rosa);
 }
+
+#imgForm {
+    background-image: url(../imgs/banner/imgBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#btnEnviar button {
+    background-color: var(--azul);
+    border: none !important;
+}
+
+@media screen and (max-width: 992px) {
+    form h4 {
+        font-size: 14pt;
+    }
+}
