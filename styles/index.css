@@ -50,6 +50,17 @@ header, footer {
     border: none !important;
 }
 
+.btnTopo {
+    height: 40px;
+    left: 30px;
+    bottom: 30px;
+}
+
+.btnTopo img{
+    height: 100%;
+    filter: drop-shadow(0 0 10px whitesmoke);
+}
+
 /* @media screen and (max-width: 992px) {
     form h4 {
         font-size: 14pt;
