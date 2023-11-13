@@ -50,8 +50,8 @@ header, footer {
     border: none !important;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     form h4 {
         font-size: 14pt;
     }
-}
+} */

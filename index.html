@@ -43,6 +43,13 @@
                 </nav>
             </header>
 
+            <!-- Primeira imagem responsiva -->
+            <!-- <picture>
+                <source src="" media="screen and (min-width: 768px)">
+                <source src="" media="screen and (min-width: 769px) and (max-width:1200px)">
+                <img src="" alt="">
+            </picture> -->
+
             <main>
                 <section id="carouselSection" class="container-fluid my-1 p-0">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -53,13 +60,19 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="imgs/banner/banner.png" class="d-block w-100" alt="imagem de um cachorro">
+                                <img src="imgs/bannerMobile/bannerMobile.png" class="d-block d-md-none d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/bannerTablet/bannerTablet.png" class="img-fluid d-none d-md-block d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/banner/banner.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="imagem de um cachorro">
                             </div>
                             <div class="carousel-item">
-                                <img src="imgs/banner/banner2.png" class="d-block w-100" alt="imagem de outro cachorro">
+                                <img src="imgs/bannerMobile/bannerMobile2.png" class="d-block d-md-none d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/bannerTablet/bannerTablet2.png" class="img-fluid d-none d-md-block d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/banner/banner2.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="imagem de outro cachorro">
                             </div>
                             <div class="carousel-item">
-                                <img src="imgs/banner/banner3.png" class="d-block w-100" alt="outra imagem de um cachorro">
+                                <img src="imgs/bannerMobile/bannerMobile3.png" class="d-block d-md-none d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/bannerTablet/bannerTablet3.png" class="img-fluid d-none d-md-block d-xl-none w-100" alt="imagem de um cachorro">
+                                <img src="imgs/banner/banner3.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="imagem de outro cachorro">
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -147,7 +160,7 @@
                     </div>
                 </section>
 
-                <section id="formSection" class="container-fluid my-2 p-0">
+                <!-- <section id="formSection" class="container-fluid my-2 p-0">
                     <h3 class="my-5 text-center" style="color: var(--rosa);">ADOTE UM PET</h3>
 
                     <div class="container-fluid m-0 p-0 d-flex justify-content-center align-center" style="height: 30rem;">
@@ -171,6 +184,40 @@
                                 </div>
                         </form>
                         <div id="imgForm" class="container w-50 p-0 m-0"></div>
+                    </div>
+                </section> -->
+            
+                <section id="formSection" class="">
+                    <h3 class="my-5 text-center" style="color: var(--rosa);">ADOTE UM PET</h3>
+
+                    <div id="formDiv" class="container-fluid p-0 m-0 d-flex">
+                        <aside id="formulario" class="w-50 p-3">
+                            <p class="h4 my-3 text-center" style="color: var(--azul);">Insira aqui suas informações para que possamos encontrar um amigo para você!</p>
+                            <div id="alinhamentoForm" class="container w-75">
+                                <form method="post" action="#">
+                                    <div class="mb-3">
+                                      <label for="email" class="form-label">Endereço de Email</label>
+                                      <input type="email" placeholder="Insira seu email" class="form-control" id="email" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text">Seu email estará seguro conosco.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="telefone" class="form-label">Telefone</label>
+                                      <input type="tel" placeholder="Insira seu número" class="form-control" id="telefone">
+                                    </div>
+                                    <div class="form-check form-switch py-3">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="notificacao" checked>
+                                        <label class="form-check-label" for="notificacao">Sesejo receber notificações?</label>
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-primary">ENVIAR</button>
+                                    </div>
+                                  </form>
+                            </div>
+                        </aside>
+
+                        <aside id="formBanner" class="w-50">
+                            <img src="imgs/banner/imgBanner.png" class="w-100" alt="">
+                        </aside>
                     </div>
                 </section>
             </main>
